@@ -1,0 +1,370 @@
+
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.eot');
+    src: local('ProximaNovaRegular'),
+        url('../fonts/ProximaNovaRegular/ProximaNovaRegular.woff') format('woff'),
+        url('../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf') format('truetype');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'ProximaNovaRegular';
+    font-size: 13pt;
+    line-height: 20pt;
+}
+
+header {
+    background: -webkit-gradient(linear, left bottom, right top, from(#530075), to(#d1007b));
+    background: -o-linear-gradient(bottom left, #530075, #d1007b);
+    background: linear-gradient(to top right, #530075, #d1007b);
+    background-image: url('../media/images/image1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1.5rem 3rem;
+    height: 150vh;
+    position: relative;
+}
+
+header .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+}
+
+
+header nav a {
+    display: block;
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: 400;
+}
+
+header nav a:hover{
+    border: 1px solid #606565;
+    border-radius: 10px;
+}
+
+header > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5rem;
+}
+
+
+/* header > div:nth-child(2) div {
+    text-align: center;
+}  */
+
+
+h1 {
+    font-weight: 700;
+    font-size: 32pt;
+    margin-bottom: 1rem;
+}
+
+header div h3 {
+    color: #949494;
+    font-weight: 400;
+}
+
+
+button {
+    padding: 1rem 2rem;
+    background: -webkit-gradient(linear, left top, right top, from(#49007c), to(#c10085));
+    background: -o-linear-gradient(left, #49007c, #c10085);
+    background: linear-gradient(to right, #49007c, #c10085);
+    color: #fff;
+    border: none;
+    border-radius: 3rem;
+    outline: none;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+header .scroll {
+    position: absolute;
+    left: 48%;
+    bottom: 20%;
+}
+
+
+
+/* main styles */
+
+/* design section styles */
+
+main .design {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+}
+
+
+
+
+main .design .best-design {
+    background-image: url('../media/images/image3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+main .design .best-code {
+    background-image: url('../media/images/image4.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+} 
+
+
+main .design > div > div {
+    padding: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+
+main .design > div > div img{
+    margin-bottom: 1rem;
+}
+
+
+/* doing section styles */
+
+main .doing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5rem 0;
+    gap: 3rem;
+}
+
+
+main .doing > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 3rem;
+       -moz-column-gap: 3rem;
+            column-gap: 3rem;
+    row-gap: 5rem;
+    padding: 0 6rem;
+}
+
+
+main .doing div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+
+main .doing div img {
+    width: 50%;
+    margin-right: 1rem;
+}
+
+main .doing div div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+
+main .doing h2 {
+    font-weight: 600;
+    font-size: 16pt;
+    margin-bottom: 1rem;
+}
+
+
+
+/* portfolio section styles */
+
+
+ main .portfolio {
+     width: 100%;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+ }
+
+ main .portfolio > div {
+     width: 33%;
+     position: relative;
+ }
+
+ main .portfolio img {
+     width: 100%;
+     height: 100%;
+ }
+
+main .portfolio > div:nth-child(2) {
+    background-color: rgb(0, 0, 0,);
+}
+
+main .portfolio > div:nth-child(2) div {
+    position: absolute;
+    z-index: 10;
+    top: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+main .portfolio  div:first-child span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    padding: 8px 15px;
+}
+
+
+
+main .portfolio > div:last-child > span:last-child {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    padding: 8px 15px;
+}
+
+
+
+/* about section styles */
+
+main .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+    margin: auto;
+    color: #fff;
+    background: url('../media/images/about-img-bg.gif') no-repeat center;
+}
+
+main .about > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5rem auto;
+} 
+
+main .about img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+main .about > div > div > p {
+    margin-top: 1.5rem;
+}
+
+
+/* map section styles */
+
+main .map {
+    position: relative;
+}
+
+main .map img:first-child {
+    width: 100%;
+}
+
+main .map img:last-child {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 100;
+}
+
+
+/* footer styles */
+
+footer {
+    padding: 3rem 0 6rem 0;
+    text-align: center;
+}
